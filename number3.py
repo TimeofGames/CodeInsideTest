@@ -141,7 +141,9 @@ for _ in range(3):
     lifts.append(Lift())
 building = Building(9, lifts)
 building.print_lifts()
-
+"""
+Сделал как понял этот номер
+"""
 while True:
     while True:
         call = input("Вызвать лифт? y/n ")
