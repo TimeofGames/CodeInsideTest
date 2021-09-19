@@ -1,0 +1,1 @@
+SELECT name.db1,name.db2 FROM books AS db1 INNER JOIN publishers AS db2 ON db1.publisher_id = db2.id WHERE (genre.db1 = 'tech' or genre.db1 = 'cyberpunk') and (2009 < year.db1 and year.db1 < 2018)
