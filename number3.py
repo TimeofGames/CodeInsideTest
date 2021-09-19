@@ -35,7 +35,7 @@ class Building():
     def all_done(self):
         return self._all_done
 
-    def call_lift(self, floor, move_to):
+    def call_lift(self, floor, move_to): #сделаем допущение, что при вызове, мы так же задаём этаж
         if floor <= self._floors:
             self._lift_calls.append([floor, move_to])
         else:
@@ -128,7 +128,7 @@ class Lift():
     def floor(self, new_floor):
         self._floor = new_floor
 
-    def move(self):
+    def move(self): #сделаем допущение, что лифты телепортируются
         if len(self._move_to) == 2:
             self._floor = self._move_to.pop(0)
         elif len(self._move_to) == 1:
